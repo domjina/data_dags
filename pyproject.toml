@@ -9,6 +9,7 @@ authors = [
 requires-python = ">=3.12"
 dependencies = [
     "apache-airflow>=3.3.1",
+    "apache-airflow-providers-postgres>=7.0.2",
     "pgsql>=2.2",
 ]
 
