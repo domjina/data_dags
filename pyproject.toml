@@ -16,7 +16,6 @@ dependencies = [
     "pandas>=3.0.6",
     "pgsql>=2.2",
     "seaborn>=0.13.2",
-    "smart-open>=8.0.2",
 ]
 
 [dependency-groups]

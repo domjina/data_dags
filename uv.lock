@@ -897,7 +897,6 @@ dependencies = [
     { name = "pandas" },
     { name = "pgsql" },
     { name = "seaborn" },
-    { name = "smart-open" },
 ]
 
 [package.dev-dependencies]
@@ -915,7 +914,6 @@ requires-dist = [
     { name = "pandas", specifier = ">=3.0.6" },
     { name = "pgsql", specifier = ">=2.2" },
     { name = "seaborn", specifier = ">=0.13.2" },
-    { name = "smart-open", specifier = ">=8.0.2" },
 ]
 
 [package.metadata.requires-dev]
@@ -3232,18 +3230,6 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/94/e7/b2c673351809dca68a0e064b6af791aa332cf192da575fd474ed7d6f16a2/six-1.17.0.tar.gz", hash = "sha256:ff70335d468e7eb6ec65b95b99d3a2836546063f63acc5171de367e834932a81", size = 34031, upload-time = "2024-12-04T17:35:28.174Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/b7/ce/149a00dd41f10bc29e5921b496af8b574d8413afcd5e30dfa0ed46c2cc5e/six-1.17.0-py2.py3-none-any.whl", hash = "sha256:4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274", size = 11050, upload-time = "2024-12-04T17:35:26.475Z" },
-]
-
-[[package]]
-name = "smart-open"
-version = "8.0.2"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "wrapt" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/6e/f1/f57ca3ddc7983173d4aa2df570393009d7572a91f7f54369de8d58675e9b/smart_open-8.0.2.tar.gz", hash = "sha256:d5b5c85d2d31a6657bb18b3725856125f3b5be0ae3020c0fafa4649f6c493122", size = 61790, upload-time = "2026-09-29T18:38:30.156Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/1c/48/d362978544ab08b385c6222ccb048fab1db3e3b820a07ef652c5d75678ae/smart_open-8.0.2-py3-none-any.whl", hash = "sha256:7ff6e4acf454269905db0c747f5d14fdba6056db572c0f8398043676dc91515c", size = 73414, upload-time = "2026-09-29T18:38:28.491Z" },
 ]
 
 [[package]]
