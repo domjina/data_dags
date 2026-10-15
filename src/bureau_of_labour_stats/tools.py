@@ -1,4 +1,5 @@
 """Methods Bureau of Labour Statistics (BLS) data"""
+import datetime
 
 def fetch_data_bls_api(
         url: str = "",
@@ -27,7 +28,11 @@ def fetch_data_bls_api(
     )
     return json.loads(request.text)["Results"]
 
-def naming_convention_bls(name: str, id: str, date: str) -> str:
+def naming_convention_bls(
+        name: str,
+        id: str,
+        date: str = datetime.datetime.today().strftime("%Y-%m-%d")
+    ) -> str:
     """Convert a date, series_name, and series_id into S3 format"""
     res = f"BLS/{name.replace(" ", "-").replace("(","-").replace(")","-")}/{id}/{date}/series.json"
     return res

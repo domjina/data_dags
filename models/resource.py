@@ -14,7 +14,7 @@ class ApiResource: # pylint: disable=too-many-instance-attributes
 
     parameters: dict | None
 
-    api_key_ref: str
+    api_key_ref: str # What to lookup in Apache airflow
 
     pagination_type: str | None
     pagination_config: dict | None

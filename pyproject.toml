@@ -9,6 +9,7 @@ authors = [
 requires-python = ">=3.12"
 dependencies = [
     "apache-airflow>=3.3.1",
+    "apache-airflow-providers-amazon>=9.37.0",
     "apache-airflow-providers-postgres>=7.0.2",
     "boto3>=1.43.108",
     "ipykernel>=7.4.0",
