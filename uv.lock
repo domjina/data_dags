@@ -1126,6 +1126,7 @@ dependencies = [
     { name = "ipykernel" },
     { name = "matplotlib" },
     { name = "pandas" },
+    { name = "pendulum" },
     { name = "pgsql" },
     { name = "seaborn" },
 ]
@@ -1144,6 +1145,7 @@ requires-dist = [
     { name = "ipykernel", specifier = ">=7.4.0" },
     { name = "matplotlib", specifier = ">=3.11.2" },
     { name = "pandas", specifier = ">=3.0.6" },
+    { name = "pendulum", specifier = ">=3.2.0" },
     { name = "pgsql", specifier = ">=2.2" },
     { name = "seaborn", specifier = ">=0.13.2" },
 ]

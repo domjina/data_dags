@@ -2,6 +2,7 @@
 from airflow.sdk import dag, task
 import datetime
 import logging
+import pendulum
 
 postgres_conn_id = "local_postgres"
 s3_conn_id = "garage-s3"
@@ -14,7 +15,7 @@ s3_conn_id = "garage-s3"
     the latest data specified by the API resource.
     """,
     schedule="@daily",
-    start_date=datetime.datetime(2026, 10, 16, 0, 0, 0),
+    start_date=pendulum.datetime(2026, 10, 1, tz="UTC"),
     catchup=False
 )
 def dag_generator():
