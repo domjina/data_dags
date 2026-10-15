@@ -41,8 +41,8 @@ def dag_generator():
         from src.bureau_of_labour_stats.tools import fetch_data_bls_api, naming_convention_bls
         url = row["base_url"]
         endpoint = row["endpoint"]
-        logging.info(f"Processing API={row["name"]}, endpoint={endpoint}")
-        logging.info(f"Requesting data from {row["base_url"]}")
+        logging.info(f"Processing API={row['name']}, endpoint={endpoint}")
+        logging.info(f"Requesting data from {row['base_url']}")
         todays_year = datetime.datetime.now().year
         response = fetch_data_bls_api(
             url=url,
@@ -50,7 +50,7 @@ def dag_generator():
             start_year=str(int(todays_year)-10),
             end_year=str(todays_year)
         )
-        logging.info(f"BLS response contains{len(response.get("series", []))}")
+        logging.info(f"BLS response contains{len(response.get('series', []))}")
         file = json.dumps(response["series"][0]["data"]).encode("UTF-8")
         s3_hook = S3Hook(aws_conn_id=s3_conn_id)
         file_name = naming_convention_bls(row["name"], row["endpoint"])
